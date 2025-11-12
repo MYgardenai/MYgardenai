@@ -6,8 +6,12 @@ import 'soil_ph_screen.dart';
 import 'plant_list_screen.dart';
 import 'property_map_screen.dart';
 import 'pest_screen.dart';
+import 'pest_details_screen.dart';
 import 'disease_screen.dart';
+import 'disease_details_screen.dart';
 import 'nutrient_screen.dart';
+import 'nutrient_details_screen.dart';
+import 'settings_screen.dart';
 
 void main() {
   runApp(MYgardenAIApp());
@@ -76,6 +80,11 @@ class HomeScreen extends StatelessWidget {
             ElevatedButton(
               child: Text('Scan for Nutrient Deficiencies'),
               onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => NutrientScreen())),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              child: Text('Settings'),
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => SettingsScreen())),
             ),
           ],
         ),
